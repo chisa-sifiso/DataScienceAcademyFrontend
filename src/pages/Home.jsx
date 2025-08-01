@@ -1,5 +1,7 @@
 import React from 'react';
 import '../styles.css';
+import { Link } from 'react-router-dom';
+
 
 const Home = () => {
 return (
@@ -27,7 +29,9 @@ return (
           <li>SOLUTIONS ▾</li>
           <li>HACKATHON ▾</li>
         </ul>
-        <button className="apply-btn">APPLY</button>
+        <Link to="/apply">
+  <button className="apply-btn">APPLY</button>
+</Link>
       </nav>
 
       {/* Leaders Section */}
@@ -72,7 +76,9 @@ return (
         <div className="learn-content">
           <h2><span className="purple">LEARN</span> DATA SCIENCE</h2>
           <p>APPLY FOR A 12‑MONTH PAID INTERNSHIP WITH THE DATA SCIENCE ACADEMY.</p>
-          <button className="apply-btn">APPLY NOW</button>
+          <Link to="/apply">
+  <button className="apply-btn">APPLY</button>
+</Link>
         </div>
       </section>
 
