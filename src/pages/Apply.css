@@ -1,0 +1,100 @@
+/* Apply.css */
+
+.apply-form {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #1c1f3b;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: #fff;
+}
+
+.apply-form h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.upload-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  background: #2a2e55;
+  padding: 0.75rem;
+  border-radius: 6px;
+}
+
+.file-input {
+  display: none;
+}
+
+.apply-form fieldset {
+  border: 1px solid #333;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+.apply-form legend {
+  padding: 0 0.5rem;
+  font-weight: bold;
+}
+
+.apply-form input,
+.apply-form select,
+.apply-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border-radius: 4px;
+  border: 1px solid #444;
+  background: #222742;
+  color: #fff;
+}
+
+.apply-form input::placeholder,
+.apply-form textarea::placeholder {
+  color: #aaa;
+}
+
+.submit-btn,
+.back-btn {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  border: none;
+  background: linear-gradient(90deg, #bd48ff, #ff748c);
+  color: #fff;
+  border-radius: 30px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: none;
+  border: 1px solid #555;
+}
+
+.back-btn:hover {
+  background: #333;
+}
+
+.apply-confirm {
+  max-width: 400px;
+  margin: 4rem auto;
+  text-align: center;
+  padding: 2rem;
+  background: #1c1f3b;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.apply-confirm .icon {
+  color: #28d07b;
+  margin-bottom: 1rem;
+}

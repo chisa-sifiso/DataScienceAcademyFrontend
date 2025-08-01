@@ -1,0 +1,1110 @@
+
+
+/* Leaders Section */
+.leaders-section {
+  background-color: #111936;
+  padding: 0; /* Remove extra space around the section */
+  display: flex;
+  align-items: stretch;
+}
+
+.leaders-content {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  flex-wrap: nowrap;
+}
+
+.leaders-image {
+  flex: 1;
+  overflow: hidden;
+}
+
+.leaders-image img {
+  width: 100%;
+  height: 89vh;
+  object-fit: cover;
+  object-position: left top;
+}
+
+.leaders-text {
+  flex: 1;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.leaders-text h2 {
+  font-family: 'Anton';
+  font-size: 74.4px;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+  color: #bd48ff;
+}
+
+.leaders-text p {
+  font-family:Bricolage Grotesque, sans-serif;
+  font-size: 21.2;
+  line-height: 2;
+  font-weight: 400;
+  max-width: 600px;
+}
+
+/* Solutions Section */
+.solutions {
+  display: flex;
+  flex-wrap: wrap;              /* allow wrap on very small screens */
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;                    /* space between text & image */
+  padding: 4rem 2rem;
+}
+
+/* text side */
+.solutions-text {
+  flex: 1 1 200px;              /* grow to fill, but don’t shrink below 400px */
+  max-width: 500px;
+  padding: 1rem;
+}
+
+/* heading: bump up a bit so it breaks exactly like your mock */
+.solutions-text h2 {
+  font-size: 2.5rem;              /* increase from 1.8rem */
+  line-height: 1;             /* tighter so “FOR YOU.” can drop cleanly */
+  margin-bottom: 1rem;
+}
+.solutions-text p {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+/* image side */
+.solutions-img {
+ 
+width: 500px;
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+
+
+/* Team Section */
+.team {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #111936;
+}
+
+.team h2 {
+  font-family: 'Anton', sans-serif;
+  font-size: 80px;
+  margin-bottom: 5rem;
+  margin-top: -70px;
+  color: white;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.team-members div {
+  width: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-members img {
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.team-members p {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 20.2px;
+  font-weight: bold;
+  color: white;
+  line-height: 1.2;
+  margin: 0;
+}
+
+
+
+
+
+/* Learn Section */
+.learn {
+  display: flex;
+  flex-wrap: wrap;          /* stack on very narrow screens */
+  align-items: center;      /* vertical centering */
+  justify-content: space-around;
+  padding: 4rem 2rem;
+  gap: 2rem;                /* space between image & content */
+}
+
+/* banner image */
+.learn-img {
+  flex: 1 1 300px;          /* grow/shrink with a min‑width of 300px */
+  max-width: 450px;
+  width: 100%;
+  display: block;
+}
+
+/* text block */
+.learn-content {
+  flex: 1 1 300px;
+  max-width: 500px;
+  text-align: left;         /* align text to the left */
+}
+
+/* Optional: tweak heading break */
+.learn-content h2 {
+  line-height: 1.2;
+  font-size: 3rem;        /* larger for emphasis */
+  margin-bottom: 1rem;
+  margin-bottom: 200px; /* adjust to match your design */
+}
+.learn-content p {
+  font-size: 1.2rem;
+  margin-top: -10rem;
+}
+.learn-content button {
+  margin-top: 2rem;
+  padding: 12px 24px;
+  font-size: 1rem;
+}
+
+
+/* Partnerships */
+/* Partnerships Section */
+.partners {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+  /* same padding as all your other sections */
+  padding: 4rem 2rem;
+  padding-top: 200px;
+  gap: 2rem;
+}
+
+.partners-text {
+  /* same flex rules as other two‑column sections */
+  flex: 1 1 300px;
+  max-width: 500px;
+  /* no extra left padding here */
+}
+
+.partners-text h3 {
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  opacity: 0.7;
+  margin-bottom: 0.5rem;
+  padding-left: 200px;
+  font-weight: bold;
+}
+
+.partners-text h2 {
+  font-size: 1.7rem;
+   letter-spacing: 1px;
+  line-height: 1.2;
+  margin: 0.5rem 0;
+}
+
+.partners-text p {
+  font-size: 1.3rem;
+  line-height: 1.4; 
+}
+
+/* Card */
+.partners-card {
+  position:relative; flex:1 1 300px; max-width:400px;
+  background:rgba(255,255,255,0.1); border-radius:20px;
+  box-shadow:0 8px 24px rgba(0,0,0,0.3);
+  min-height:360px;
+  margin:0 auto; /* center the card */
+  margin-bottom: 50px; /* space below card */
+  display:flex; align-items:center; justify-content:center;
+  padding: 0;
+}
+.partners-watermark {
+  position:absolute; top:1rem; right:1rem;
+  width:50px; opacity:0.2;
+}
+
+/* Logo stack */
+.partners-list {
+  display:flex; flex-direction:column;
+  justify-content:space-between; height:100%;
+  align-items:center;
+}
+.partner-item {
+  position: relative;
+  width: -800px;
+  height: 140px;           /* define a square “slot” for shadow+logo */
+  display: flex;
+  align-items: center;     /* vertical center */
+  justify-content: center; /* horizontal center */
+}
+.shadow {
+  position:absolute; top:50%; left:50%;
+  transform:translate(-120%,-50%);
+  z-index:1;
+}
+.partners-list .shadow-big {
+  width: 40px !important;      /* force the size */
+  top: 40% !important;          /* move it up a bit */
+  transform: translate(-50%, -50%);
+}
+.shadow-small { width:140px; }
+.partner-item .logo {
+  position: relative;
+  z-index: 2;
+  max-width: 140%;          /* fill up to 80% of that slot */
+  max-height: 50%;         /* maintain aspect ratio */
+  object-fit: contain;
+         /* override any old height rules */
+}
+/* inside your CSS file, after .partners-card */
+
+.partners-image {
+  max-width: 100%;
+  max-height: 50;
+  object-fit: contain;   /* or use “cover” to fill and crop */
+  display: block;
+}
+
+
+
+/* mobile: stack text and card */
+@media (max-width: 768px) {
+  .partners {
+    flex-direction: column;
+    text-align: center;
+  }
+  .partners-card {
+    margin: 0 auto;
+  }
+}
+
+
+/* Footer */
+/* Footer CTA Section */
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 2rem;
+  background-color: #111936;
+}
+
+/* Left column content */
+.footer-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  max-width: 500px;
+}
+
+.footer-text h2 {
+  font-family: 'Anton', sans-serif;
+  font-size: 2.8rem;
+  margin: 0;
+  color: white;
+}
+
+/* Contact button */
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(to right, #bd48ff, #ff748c);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.contact-icon {
+  width: 20px;
+  height: auto;
+}
+
+/* DSA Logo */
+.footer-logo {
+  width: 100px;
+  height: auto;
+  margin-top: 1rem;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  filter: invert(100%);
+  transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
+/* Right image side */
+.footer-hero {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-hero-img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-text {
+    align-items: center;
+  }
+
+  .footer-hero {
+    margin-top: 2rem;
+  }
+}
+
+
+
+/* Hero */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* background image: make it a positioned layer */
+.hero-bg {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+} 
+
+/* overlay container sits above bg */
+.hero-overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* logo */
+.hero-logo {
+  position: absolute;
+  top: -100px;
+  left: -150px;
+  width: 600px;
+  z-index: 3;
+}
+
+/* icons */
+.hero-icon {
+  position: absolute;
+  width: 500px;
+  height: 200px;
+  z-index: 3;
+  transform: translate(-50%, -50%);
+}
+
+/* tweak these to place each icon */
+.icon-phone      { top: 50%; left: 30%; }
+.icon-info       { top: 20%; left: 40%; }
+.icon-education  { top: 20%; left: 65%; }
+.icon-custom     { top: 50%; left: 70%; }
+/* enable smooth scrolling for in‑page anchors */
+html {
+  scroll-behavior: smooth;
+}
+/* Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #111936;
+  color: white;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.purple {
+  color: #bd48ff;
+}
+
+button {
+  background: linear-gradient(to right, #bd48ff, #ff748c);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Navigation */
+.nav-bar {
+  background-color: #b2a12f;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.nav-bar .logo img {
+  width: -500px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  font-size: 0.9rem;
+}
+
+.apply-btn {
+  background: linear-gradient(to right, #bd48ff, #ff748c);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+/* Leaders Section */
+.leaders-section {
+  background-color: #111936;
+  padding: 0rem 0rem ;/* Remove extra space around the section */
+  display: flex;
+  align-items: stretch;
+}
+
+.leaders-content {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  flex-wrap: nowrap;
+}
+
+.leaders-image {
+  flex: 1;
+  overflow: hidden;
+}
+
+.leaders-image img {
+  width: 100%;
+  height: 89vh;
+  object-fit: cover;
+  object-position: left top;
+}
+
+.leaders-text {
+  flex: 1;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.leaders-text h2 {
+   font: 'Anton', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+  color: #bd48ff;
+}
+
+.leaders-text p {
+  font-size: 1.25rem;
+  line-height: 2;
+  font-weight: 400;
+  max-width: 600px;
+}
+
+/* Solutions Section */
+.solutions {
+  display: flex;
+  flex-wrap: wrap;              /* allow wrap on very small screens */
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;                    /* space between text & image */
+  padding: 0rem 0rem ;
+}
+
+/* text side */
+.solutions-text {
+  flex: 1 1 200px;              /* grow to fill, but don’t shrink below 400px */
+  max-width: 500px;
+  padding: 1rem;
+}
+
+/* heading: bump up a bit so it breaks exactly like your mock */
+.solutions-text h2 {
+  font-family:Anton, sans-serif;
+  font-size: 72.2px;              /* increase from 1.8rem */
+  line-height: 1;             /* tighter so “FOR YOU.” can drop cleanly */
+ 
+}
+.solutions-text p {
+  font-family: Bricolage Grotesque, sans-serif;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+/* image side */
+.solutions-img {
+ 
+width: 600px;
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+
+
+/* Team Section */
+.team {
+  text-align: center;
+  padding: 9rem 0rem;
+}
+.team h2 {
+  font-family: 'Anton', sans-serif;
+  font-size: 72.4px;
+  margin-bottom: 5rem;
+  margin-top: -70px;
+  color: white;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+
+.team-members div {
+  width: 140px;
+}
+
+.team-members img {
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+
+.team-members p {
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
+/* Learn Section */
+.learn {
+  display: flex;
+  flex-wrap: wrap;          /* stack on very narrow screens */
+  align-items: center;      /* vertical centering */
+  justify-content: flex-start; 
+
+  gap: 2rem;   
+  padding: 0rem 0rem 0rem;             /* space between image & content */
+}
+
+/* banner image */
+.learn-img {
+  flex: 1 1 300px;          /* grow/shrink with a min‑width of 300px */
+  max-width: 600px;
+  width: 100%;
+  display: block;
+  
+}
+
+/* text block */
+.learn-content {
+  flex: 1 1 300px;
+  max-width: 500px;
+  text-align: left;         /* align text to the left */
+}
+
+/* Optional: tweak heading break */
+.learn-content h2 {
+  font-family: 'Anton', sans-serif;
+  line-height: 1.2;
+  font-size: 72px;        /* larger for emphasis */
+  margin-bottom: 1rem;
+  margin-bottom: 200px; /* adjust to match your design */
+}
+.learn-content p {
+  font-family: Bricolage Grotesque, sans-serif;
+  font-size: 21.2px;
+  margin-top: -10rem;
+}
+.learn-content button {
+  margin-top: 2rem;
+  padding: 12px 24px;
+  font-size: 1rem;
+}
+
+
+/* Partnerships */
+/* Partnerships Section */
+.partners {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+  /* same padding as all your other sections */
+ 
+  gap: 2rem;
+   padding: 3rem 2rem 5rem;
+}
+
+.partners-text {
+  /* same flex rules as other two‑column sections */
+  flex: 1 1 300px;
+  max-width: 500px;
+  /* no extra left padding here */
+}
+
+.partners-text h3 {
+  font-family: Bricolage Grotesque, sans-serif;
+  font-size: 21.1px;
+  letter-spacing: 1px;
+  opacity: 0.7;
+  margin-bottom: 0.5rem;
+  padding-left: 200px;
+  font-weight: bold;
+}
+
+.partners-text h2 {
+  font-family: Anton, sans-serif;
+  font-size: 28px;
+  line-height: 1.2;
+  margin: 0.5rem 0;
+}
+
+.partners-text p {
+  font-family: Bricolage Grotesque, sans-serif;
+  font-size: 21.1px;
+  line-height: 1.4;
+}
+
+/* Card */
+.partners-card {
+  position:relative; flex:1 1 300px; max-width:350px;
+  background:rgba(255,255,255,0.1); border-radius:20px;
+  box-shadow:0 8px 24px rgba(0,0,0,0.3);
+  padding:0rem 1rem ; min-height:30px;
+  margin:0 auto; /* center the card */
+  margin-bottom: 0; /* space below card */
+  display:flex; align-items:center; justify-content:center;
+}
+.partners-watermark {
+  position:absolute; top:1rem; right:1rem;
+  width:50px; opacity:0.2;
+}
+
+/* Logo stack */
+.partners-list {
+  display:flex; flex-direction:column;
+  justify-content:space-between; height:100%;
+  align-items:center;
+}
+.partner-item {
+  position: relative;
+  width: -800px;
+  height: 140px;           /* define a square “slot” for shadow+logo */
+  display: flex;
+  align-items: center;     /* vertical center */
+  justify-content: center; /* horizontal center */
+}
+.shadow {
+  position:absolute; top:50%; left:50%;
+  transform:translate(-120%,-50%);
+  z-index:1;
+}
+.partners-list .shadow-big {
+  width: 40px !important;      /* force the size */
+  top: 40% !important;          /* move it up a bit */
+  transform: translate(-50%, -50%);
+}
+.shadow-small { width:140px; }
+.partner-item .logo {
+  position: relative;
+  z-index: 2;
+  max-width: 140%;          /* fill up to 80% of that slot */
+  max-height: 50%;         /* maintain aspect ratio */
+  object-fit: contain;
+         /* override any old height rules */
+}
+
+/* mobile: stack text and card */
+@media (max-width: 768px) {
+  .partners {
+    flex-direction: column;
+    text-align: center;
+  }
+  .partners-card {
+    margin: 0 auto;
+  }
+}
+
+
+/* Footer */
+/* Footer: two‑column layout */
+/* Footer */
+.footer {
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 0rem 0rem;
+  background-color: #111936;
+  gap: 2rem;
+  grid-auto-rows: 360px; 
+}
+
+/* Left column */
+.footer-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.footer-text h2 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+/* “Contact Us” button */
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(to right, #bd48ff, #ff748c);
+  color: #fff; 
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  max-width: 180px;
+  white-space: nowrap;
+  
+}
+
+/* Envelope icon in button */
+.contact-icon {
+  width: 20px;
+  height: auto;
+}
+
+/* Logo under button */
+.footer-logo {
+  width: 120px;
+  height: auto;
+  margin-top: 1rem;
+}
+
+/* Social icons row */
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  filter: invert(100%);
+}
+
+/* Right column: splash + girl */
+.footer-hero {
+ display: flex;
+  justify-content: center; /* center the image */
+  align-items: center;
+  height: 100%;
+  justify-self: center;
+  
+}
+
+.footer-hero-img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+/* Mobile: stack into one column */
+@media (max-width: 768px) {
+  .footer {
+    grid-template-columns: 2fr;
+    text-align: center;
+  }
+
+  .footer-text,
+  .footer-hero {
+    margin: 0 auto;
+  }
+}
+
+
+
+/* Hero */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* background image: make it a positioned layer */
+.hero-bg {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+} 
+
+/* overlay container sits above bg */
+.hero-overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* logo */
+.hero-logo {
+  position: absolute;
+  top: -100px;
+  left: -150px;
+  width: 600px;
+  z-index: 3;
+}
+
+/* icons */
+.hero-icon {
+  position: absolute;
+  width: 500px;
+  height: 200px;
+  z-index: 3;
+  transform: translate(-50%, -50%);
+}
+
+/* tweak these to place each icon */
+.icon-phone      { top: 50%; left: 30%; }
+.icon-info       { top: 20%; left: 40%; }
+.icon-education  { top: 20%; left: 65%; }
+.icon-custom     { top: 50%; left: 70%; }
+/* enable smooth scrolling for in‑page anchors */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #111936;
+  color: white;
+  line-height: 1.5;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.purple {
+  color: #bd48ff;
+}
+button {
+  background: linear-gradient(to right, #bd48ff, #ff748c);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* background layer */
+.hero-bg {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* overlay container (allow clicks) */
+.hero-overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: auto;
+}
+
+/* make icons and links clickable */
+.icon-link {
+  display: inline-block;
+  pointer-events: auto;
+}
+
+/* icon base */
+.hero-icon {
+  position: absolute;
+  width: 100px;   /* adjust as desired */
+  height: auto;  /* adjust as desired */
+  z-index: 3;
+  transform: translate(-50%, -50%);
+  transition: filter 0.2s, transform 0.2s;
+  filter: brightness(100%);
+  cursor: pointer;
+}
+.hero-icon:hover {
+  filter: brightness(120%);
+  transform: translate(-50%, -50%) scale(1.1);
+}
+.hero-icon:active {
+  filter: brightness(150%);
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+/* individual positions */
+ 
+.icon-phone      { top: 34%; left: 34%; }
+.icon-info       { top: 18%; left: 46%; }
+.icon-education  { top: 18%; left: 58%; }
+.icon-custom     { top: 34%; left: 68%; }
+
+/* Navigation */
+.nav-bar {
+  background-color: #151627;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.nav-bar .logo img {
+  width: 100px;
+}
+.nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  font-size: 0.9rem;
+}
+.apply-btn {
+  background: linear-gradient(to right, #bd48ff, #ff748c);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+/* Sections: Leaders, Solutions, Team, Learn, Partners, Footer */
+/* … (keep your existing section CSS from before) … */
+
