@@ -107,7 +107,7 @@ export default function Apply() {
     setSubmitting(true);
     try {
       await axios.post(
-        'https://13.48.10.3:8443/api/applications',
+        'http://13.48.10.3:8080/api/applications',
         payload,
         { headers: { 'Content-Type': 'application/json' } }
       );

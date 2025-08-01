@@ -229,7 +229,7 @@ width: 500px;
 
 /* Card */
 .partners-card {
-  position:relative; flex:1 1 300px; max-width:400px;
+  position:relative; flex:1 1 300px; max-width:300px;
   background:rgba(255,255,255,0.1); border-radius:20px;
   box-shadow:0 8px 24px rgba(0,0,0,0.3);
   min-height:360px;
@@ -768,10 +768,10 @@ width: 600px;
 
 /* Card */
 .partners-card {
-  position:relative; flex:1 1 300px; max-width:350px;
+  position:relative; flex:1 1 300px; max-width:300px;
   background:rgba(255,255,255,0.1); border-radius:20px;
   box-shadow:0 8px 24px rgba(0,0,0,0.3);
-  padding:0rem 1rem ; min-height:30px;
+  padding:4rem 2rem ; min-height:30px;
   margin:0 auto; /* center the card */
   margin-bottom: 0; /* space below card */
   display:flex; align-items:center; justify-content:center;
