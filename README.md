@@ -83,15 +83,7 @@ The client provided a high-fidelity mockup of a vibrant, colorful landing page i
 ## 📁 Folder Structure
 
 ```
-/project-root
-│
-├─ assets/
-│   ├─ images/          # hero.png, logos, icons, shadows, team photos
-│   └─ styles.css       # main stylesheet
-│
-├─ index.html           # landing page markup
-└─ README.md            # project overview and instructions
-```
+
 
 ---
 
