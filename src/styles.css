@@ -1105,6 +1105,129 @@ button {
   font-size: 0.9rem;
 }
 
+
+/* Responsive Styles */
+
+/* Mobile Devices (up to 480px) */
+@media (max-width: 480px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 0.8rem;
+  }
+
+  .leaders-text h2,
+  .solutions-text h2,
+  .team h2,
+  .learn-content h2,
+  .partners-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .leaders-text p,
+  .solutions-text p,
+  .learn-content p,
+  .partners-text p {
+    font-size: 1rem;
+  }
+
+  .hero-logo {
+    width: 300px;
+    top: -50px;
+    left: -100px;
+  }
+
+  .hero-icon {
+    width: 80px;
+  }
+
+  .icon-phone      { top: 40%; left: 30%; }
+  .icon-info       { top: 20%; left: 40%; }
+  .icon-education  { top: 20%; left: 60%; }
+  .icon-custom     { top: 40%; left: 70%; }
+
+  .solutions,
+  .learn,
+  .partners,
+  .footer {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+
+  .solutions-img,
+  .learn-img,
+  .footer-hero-img {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .team-members div {
+    width: 100px;
+  }
+
+  .team-members img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* Tablets (481px to 768px) */
+@media (max-width: 768px) {
+  .nav-links {
+    font-size: 0.85rem;
+  }
+
+  .leaders-text h2,
+  .solutions-text h2,
+  .team h2,
+  .learn-content h2,
+  .partners-text h2 {
+    font-size: 2.5rem;
+  }
+
+  .leaders-text p,
+  .solutions-text p,
+  .learn-content p,
+  .partners-text p {
+    font-size: 1.2rem;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-text {
+    align-items: center;
+  }
+
+  .footer-hero {
+    justify-content: center;
+    margin-top: 2rem;
+  }
+}
+
+/* Small Laptops (769px to 1024px) */
+@media (max-width: 1024px) {
+  .leaders-text h2,
+  .solutions-text h2,
+  .team h2,
+  .learn-content h2,
+  .partners-text h2 {
+    font-size: 3rem;
+  }
+
+  .hero-logo {
+    width: 400px;
+    top: -80px;
+    left: -100px;
+  }
+
+  .hero-icon {
+    width: 120px;
+  }
+}
+
 /* Sections: Leaders, Solutions, Team, Learn, Partners, Footer */
 /* … (keep your existing section CSS from before) … */
 
