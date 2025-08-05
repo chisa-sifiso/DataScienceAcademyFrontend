@@ -156,8 +156,5 @@ If you’d like to convert the “CONTACT US” link into a working form:
 
 ---
 
-## 📄 License
-
-This project is released under the [MIT License](LICENSE). Feel free to adapt and reuse for your own educational or commercial purposes.
 
 
