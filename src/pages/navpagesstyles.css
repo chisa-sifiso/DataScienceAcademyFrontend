@@ -1,0 +1,30 @@
+
+
+/* same overlay & centering you have in Home’s .hero-overlay */
+.page-container::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+.page-content {
+  position: relative;
+  z-index: 1;
+  padding: 4rem;
+  color: white;
+}
+
+/* mirror your “close-btn” style but as a back button */
+.back-btn {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 2;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}

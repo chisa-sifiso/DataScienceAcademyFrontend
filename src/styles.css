@@ -1,3 +1,80 @@
+/* Add hamburger menu styles */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+  margin-left: auto;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(8px);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  gap: 1.5rem;
+}
+
+.nav-links-mobile {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.mobile-apply {
+  background: linear-gradient(to right, #bd48ff, #ff748c);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive - Show hamburger and hide nav links */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 2rem;
+    font-size: 2rem;
+    z-index: 1000;
+  }
+
+  .nav-links,
+  .apply-btn {
+    display: none !important;
+  }
+}
+
+/* Keep the rest of your existing CSS here */
+
+/* Your existing styles follow... */
+
 
 
 /* Leaders Section */
@@ -334,7 +411,7 @@ width: 500px;
   gap: 0.5rem;
   background: linear-gradient(to right, #bd48ff, #ff748c);
   color: white;
-  padding: 12px 24px;
+  padding: 23px 24px;
   border-radius: 30px;
   font-weight: bold;
   text-decoration: none;
@@ -850,11 +927,15 @@ width: 600px;
 .footer-text h2 {
   font-size: 2.5rem;
   margin: 0;
+    flex-direction: column;     /* stack vertically */
+  align-items: center;        /* ← center each child horizontally */
+  text-align: center;
 }
 
 /* “Contact Us” button */
 .contact-btn {
   display: inline-flex;
+  padding-left: 20px;
   align-items: center;
   gap: 0.5rem;
   background: linear-gradient(to right, #bd48ff, #ff748c);
@@ -1225,6 +1306,233 @@ button {
 
   .hero-icon {
     width: 120px;
+  }
+}
+@media (max-width: 768px) {
+  /* Make all logos smaller on mobile */
+  .hero-logo {
+    width: 500px;
+    top: -40px;
+    left: -80px;
+  }
+   .hero-icon {
+    width: 50px; /* smaller for mobile */
+    height: auto;
+  }
+
+  /* Reposition icons to fit better on small screens */
+  .icon-phone {
+    top: 32%; 
+    left: 15%;
+  }
+
+  .icon-info {
+    top: 25%; 
+    left: 35%;
+  }
+
+  .icon-education {
+    top: 25%; 
+    left: 65%;
+  }
+
+  .icon-custom {
+    top: 30%; 
+    left: 88%;
+  }
+
+  .footer-logo {
+    width: 80px;
+    padding-left: -122px;
+  }
+
+  .nav-bar .logo img {
+    width: 90px;
+  }
+
+  .footer-hero-img {
+    max-width: 300px;
+  }
+
+  .hero-icon {
+    width: 60px;
+  }
+}
+/* hide navbar on desktop until we’ve reached the leaders section */
+@media (min-width: 768px) {
+  .nav-bar {
+    display: none;
+  }
+  .nav-bar.visible {
+    display: flex;
+  }
+}
+.nav-bar {
+  background-color: #151627;       /* deep indigo */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* logo left, links center, button right */
+  padding: 0.5rem 2rem;            /* shallower top/bottom padding */
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+/* Logo */
+.nav-bar .logo img {
+  width: 120px;    /* adjust as needed to match pic-2 size */
+  height: auto;
+}
+
+/* Desktop links */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center; /* center them in the remaining space */
+  flex: 1;                 /* take up all available space between logo & button */
+}
+
+.nav-links li a {
+  color: #bbb;             /* light grey by default */
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: #fff;             /* bright white on hover/active */
+}
+
+/* Apply button */
+.apply-btn {
+  background: linear-gradient(to right, #bd48ff, #ff748c);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* Hide mobile-only items on desktop */
+@media (min-width: 769px) {
+  @media (min-width: 769px) {
+  .nav-bar {
+    display: none !important;
+  }
+  .nav-bar.visible {
+    display: flex !important;
+  }
+}
+  .hamburger,
+  .mobile-menu,
+  .nav-links-mobile,
+  .mobile-apply {
+    display: none !important;
+  }
+  .footer-text {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* On smaller screens, you still have your existing hamburger rules */
+@media (max-width: 768px) {
+  .nav-bar {
+    padding: 0.75rem 1rem;
+  }
+}
+/* ————————————— Mobile NavBar Styling ————————————— */
+@media (max-width: 768px) {
+  /* keep the top bar slim & consistent */
+
+  .nav-bar {
+    padding: 0.75rem 1rem;
+    justify-content: space-between;
+  }
+
+  /* hide desktop links & button */
+  .nav-links,
+  .apply-btn {
+    display: none !important;
+  }
+
+  /* show hamburger */
+  .hamburger {
+    display: block;
+    color: #bbb;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  /* slide-out menu container */
+  .mobile-menu {
+    background: #151627;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
+    gap: 2rem;
+  }
+
+  /* mobile links list */
+  .nav-links-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* style each <a> exactly like desktop nav-links */
+  .nav-links-mobile li a {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  .nav-links-mobile li a:hover,
+  .nav-links-mobile li a.active {
+    color: #fff;
+  }
+
+  /* move the Apply button into the slide-out style */
+  .mobile-apply {
+    background: linear-gradient(to right, #bd48ff, #ff748c);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+
+  /* close icon in the same color family */
+  .close-btn {
+    color: #bbb;
+    font-size: 2rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  .close-btn:hover {
+    color: #fff;
   }
 }
 
