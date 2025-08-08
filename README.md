@@ -82,18 +82,14 @@ The client provided a high-fidelity mockup of a vibrant, colorful landing page i
 
 ## 📁 Folder Structure
 
-```
 
 
----
-
-## 🚀 Installation
+ 🚀 Installation
 
 1. **Clone** this repository
-
-   ```bash
-   git clone https://github.com/your-username/data-science-academy-landing.git
-   cd data-science-academy-landing
+bash
+git clone https://github.com/chisa-sifiso/data-science-academy-landing.git
+cd data-science-academy-landing
    ```
 2. **Open** `index.html` in your browser
    No extra build tools or package managers are required!
